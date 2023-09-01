@@ -2,9 +2,9 @@
 
 namespace App\Console;
 
+use App\Jobs\SendReservationEmail;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
-use SendReservationNotificationsJob;
 
 class Kernel extends ConsoleKernel
 {
@@ -14,8 +14,8 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
 
-        $schedule->job(new SendReservationNotificationsJob)->everyTenMinutes();
-
+        $schedule->job(new SendReservationEmail)->everyMinute();
+        $schedule->command('app:send-email')->everyMinute();
         // $schedule->command('inspire')->hourly();
     }
 

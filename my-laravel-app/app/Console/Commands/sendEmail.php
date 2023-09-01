@@ -1,39 +1,37 @@
 <?php
-namespace App\Jobs;
+
+namespace App\Console\Commands;
 
 use App\Mail\MailableName;
 use App\Mail\MailableService;
 use App\Models\Caisse;
 use App\Models\Service;
-use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Foundation\Bus\Dispatchable;
-use Illuminate\Queue\InteractsWithQueue;
-use Illuminate\Queue\SerializesModels;
+use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Redis; // Import the Redis facade
-use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\Redis;
 
-class SendReservationEmail implements ShouldQueue
+class sendEmail extends Command
 {
-    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
-
-
     /**
-     * Create a new job instance.
+     * The name and signature of the console command.
      *
+     * @var string
      */
-    public function __construct()
-    {
-       info('i m contruct');
-    }
+    protected $signature = 'app:send-email';
 
     /**
-     * Execute the job.
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Sending email when estimatesd less than 5 minute';
+
+    /**
+     * Execute the console command.
      */
     public function handle()
     {
-        info('i m in handle');
+        info('im in handle');
         // Caisse
         $reservations = Caisse::where('status', 'queued')->get();
         // loop the queue
@@ -47,7 +45,7 @@ class SendReservationEmail implements ShouldQueue
                 // Send an email when estimated time is less than 10 minutes
                 $mailable = new MailableName();
                 Mail::to($reservation->email)->send($mailable);
-                info('i m in the loop');
+                info('done');
             }
 
 
@@ -69,6 +67,8 @@ class SendReservationEmail implements ShouldQueue
             }
 
         }
-        return 1;
 
-    }}
+
+    }
+
+}

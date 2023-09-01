@@ -34,22 +34,25 @@ class AddToQueueJob implements ShouldQueue
     // AddToQueueJob.php
     public function handle()
     {
-        info('Test job executed successfully!');
         $queuePosition = Service::where('status', 'queued')->count();
-        info('Test job executed successfully this time! Queue position: ' . $queuePosition);
         // Calculate estimated time based on the queue position and 5 minutes per person
         $estimatedTime = $queuePosition * 10; // Estimated time in minutes
-        info('Test job executed successfully this time! Queue position: ' .$estimatedTime);
 
-        info('All is good' .$this->reservation);
         // Add to the queue
-        $redis=Redis::zadd('reservation_queue', $estimatedTime, $this->reservation->id);
-        info('this is your reservation_queue:' .$redis);
-        $elements = Redis::zrange('reservation_queue', 0, -1); // Retrieve all elements
-        info('Elements in reservation_queue: ' . json_encode($elements));
-        $job = new SendReservationEmail($this->reservation->id);
-        $jsonData = $job->handle();
-        info('yo}',$jsonData);
+        Redis::zadd('reservation_queue', $estimatedTime, $this->reservation->id);
+        $reservation = Service::find($this->reservation->id);
+
+        // Retrieve estimated time from Redis or queue
+        $estimatedTime = Redis::zscore('reservation_queue', $this->reservation->id);
+        $estimatedTime=(int)$estimatedTime;
+
+            $jsonData =  [
+            'nom' => $reservation->nom,
+            'prenom'=>$reservation->prenom,
+            'estimatedTime' => $estimatedTime,
+        ];
+        return $jsonData;
+
 
 
     }

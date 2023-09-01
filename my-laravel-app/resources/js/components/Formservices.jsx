@@ -27,7 +27,7 @@ function Formservices() {
             });
 
             console.log('Form submitted successfully', response.data);
-            window.location.href = 'http://localhost:8000/simulate';
+            window.location.href = 'http://localhost:8000/success';
 
         } catch (error) {
             console.error('Form submission error:', error);

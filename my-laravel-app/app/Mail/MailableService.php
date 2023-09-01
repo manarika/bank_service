@@ -10,7 +10,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class MailableName extends Mailable
+class MailableService extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -27,13 +27,10 @@ class MailableName extends Mailable
      */
     public function envelope(): Envelope
     {
-
-
         return new Envelope(
             from: new Address('BankCentral@bank.com', 'Service reservation'),
-            subject: "Notification reservation de caisse",
-             );
-
+            subject: "Notification reservation de service ",
+        );
     }
 
     /**
@@ -42,7 +39,7 @@ class MailableName extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.reservation_caisse',
+            view: 'emails.reservation_service',
         );
     }
 

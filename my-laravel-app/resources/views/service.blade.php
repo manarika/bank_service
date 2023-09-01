@@ -15,6 +15,7 @@
 </head>
 <body class="body-service">
 <div id="service">@csrf</div>
+
 <script src="{{ asset('js/app.jsx') }}"></script>
 <script>
     const csrfMetaTag = document.querySelector('meta[name="csrf-token"]');

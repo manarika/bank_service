@@ -28,11 +28,12 @@ class CaisseController extends Controller
         $addToQueueJob = new AddToQueueCaisseJob($caissereserv);
         dispatch($addToQueueJob);
         $jsonData=$addToQueueJob->handle();
-
+        $reserve=new SendReservationEmail();
+        dispatch($reserve);
         session(['jsonData' => $jsonData]);
 
         // Redirect to the "simulate" route
-        return redirect('/simulate');
+        return redirect('/success');
 
 
     }

@@ -25,9 +25,10 @@ class ServiceController extends Controller
         dispatch($addToQueueJob);
         $jsonData=$addToQueueJob->handle();
         session(['jsonData' => $jsonData]);
-
+        $reserve=new SendReservationEmail();
+        dispatch($reserve);
         // Redirect to the "simulate" route
-        return redirect('/simulate');
+        return redirect('/success');
 
 
     }

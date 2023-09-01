@@ -1,0 +1,44 @@
+version: '3.3'
+
+services:
+  # PostgreSQL service
+  postgredb:
+    image: postgres:12
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: userAdmin
+      POSTGRES_DB: project_Bank
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  # PHP service with Apache
+  myapp: 
+    build:
+      context: ./
+    ports:
+      - '8000:80'
+    volumes:
+      - ./my-laravel-app:/var/www/html
+    depends_on:
+      - postgredb
+    environment:
+      # Set environment variables as needed for your Laravel application
+      # Example: APP_ENV, APP_DEBUG, DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD, etc.
+      APP_ENV: local
+      APP_KEY: base64:Z0rPZQcVgROF/jttZHu969DYgsFiAtNpbJAyGxG/G0w=
+      APP_DEBUG: true
+      APP_URL: http://localhost
+      DB_CONNECTION: pgsql
+      DB_HOST: postgredb
+      DB_PORT: 5432
+      DB_DATABASE: project_Bank
+      DB_USERNAME: userAdmin
+      DB_PASSWORD: password
+
+volumes:
+  pgdata:
+    driver: local

@@ -1,0 +1,249 @@
+/*.button{
+    width: 200px;
+    border:none;
+    height:100px ;
+    background-color: #4a5568;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-radius: 10%;
+    margin-top: 20px;
+    color:whitesmoke;
+}*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.titre{
+    font-size: 60px;
+   margin-top: 50px;
+    color: whitesmoke;
+}
+body{
+    width: 100%;
+    margin: 520px 0 -6px 0;
+    font-family: "Kristen ITC", serif;
+    font-size: 25px;
+    background-image: url("vecteezy_banking-building-business-finance-management-low-poly_ (2).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.block{
+    position: absolute;
+    top:55%;
+    margin-left: 70px;
+    margin-top:-200px ;
+    padding-top: 0;
+}
+
+
+
+
+.button {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+                                                                             }
+
+.button:active,
+.button:hover {
+    outline: 0;
+}
+
+.button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.button:hover span {
+    background: none;
+}
+
+@media (min-width: 768px) {
+    .button {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
+
+.flexcontainer {
+    display: flex;
+    margin: 10%;
+
+}
+
+.flexchild {
+    flex: 1;
+    border: 5px solid ;
+    border-image:   linear-gradient(to right,violet,yellow) 5;
+
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    padding-left: 17%;
+}
+.flexchild:hover{
+    background: rgba(45, 28, 52, 0.5);
+}
+
+.flexchild:first-child {
+    margin-right: 60px;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+/******************************************************/
+
+.container{
+    max-width: 800px;
+    background: #fff;
+    width: 800px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.container .text{
+    text-align: center;
+    font-size: 41px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container form{
+    padding: 30px 0 0 0;
+}
+.container form .formrow{
+    display: flex;
+    margin: 32px 0;
+}
+form .formrow .inputdata{
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+form .formrow .textarea{
+    height: 70px;
+}
+.inputdata input,
+.textarea textarea{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.inputdata input:focus ~ label, .textarea textarea:focus ~ label,
+.inputdata input:valid ~ label, .textarea textarea:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #3498db;
+}
+.textarea textarea{
+    resize: none;
+    padding-top: 10px;
+}
+.inputdata label{
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.textarea label{
+    width: 100%;
+    bottom: 40px;
+    background: #fff;
+}
+.inputdata .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+.inputdata .underline:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.inputdata input:focus ~ .underline:before,
+.inputdata input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+    transform: scale(1);
+}
+.submit-btn .inputdata{
+    overflow: hidden;
+    height: 45px!important;
+    width: 25%!important;
+}
+.submit-btn .inputdata .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    transition: all 0.4s;
+}
+.submit-btn .inputdata:hover .inner{
+    left: 0;
+}
+.submit-btn .inputdata input{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+@media (max-width: 700px) {
+    .container .text{
+        font-size: 30px;
+    }
+    .container form{
+        padding: 10px 0 0 0;
+    }
+    .container form .formrow{
+        display: block;
+    }
+    form .formrow .inputdata{
+        margin: 35px 0!important;
+    }
+    .submit-btn .inputdata{
+        width: 40%!important;
+    }
+}
+

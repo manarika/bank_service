@@ -34,41 +34,48 @@ class sendEmail extends Command
         info('im in handle');
         // Caisse
         $reservations = Caisse::where('status', 'queued')->get();
-        // loop the queue
+        $queue = Redis::zrange('reservation_caisse_queue', 0, -1, 'WITHSCORES');        // loop the queue
         foreach ($reservations as $reservation) {
-            // Retrieve estimated time from Redis or queue
-            $estimatedTime = Redis::zscore('reservation_caisse_queue', $reservation->id);
-            $estimatedTime = intval( $estimatedTime );
+            foreach ($queue as $key => $value) {
+                if ($reservation->id == $key) {
+                    info('im in time service');
 
-            if ($estimatedTime < 10)
-            {
-                // Send an email when estimated time is less than 10 minutes
-                $mailable = new MailableName();
-                Mail::to($reservation->email)->send($mailable);
-                info('done');
+                    // Retrieve estimated time from Redis or queue
+                    $estimatedTime = $value;
+                    $estimatedTime = intval($estimatedTime);
+
+                    if ($estimatedTime <= 5) {
+                        // Send an email when estimated time is less than 10 minutes
+                        $mailable = new MailableName();
+                        Mail::to($reservation->email)->send($mailable);
+                        info('done');
+                    }
+                }
             }
-
-
         }
 
         // service
         $Services = Service::where('status', 'queued')->get();
+        $queues = Redis::zrange('reservation__queue', 0, -1, 'WITHSCORES');        // loop the queue
+
         // loop the queue
         foreach ($Services as $Service) {
-            //stocking estimated time
-            $estimatedTime = Redis::zscore('reservation_queue', $Service->id);
-            //string to int
-            $estimatedTime = intval( $estimatedTime );
-            if ($estimatedTime < 10)
-            {
-                // Send an email when estimated time is less than 10 minutes
-                $mailable = new MailableService();
-                Mail::to($Service->email)->send($mailable);
+            foreach ($queues as $key => $value) {
+                if ($Service->id == $key) {
+
+                    //stocking estimated time
+                    $estimatedTime = $value;
+                    //string to int
+                    $estimatedTime = intval($estimatedTime);
+                    if ($estimatedTime <= 10) {
+                        // Send an email when estimated time is less than 10 minutes
+                        $mailable = new MailableService();
+                        Mail::to($Service->email)->send($mailable);
+                    }
+
+                }
+
             }
-
         }
-
-
     }
-
 }

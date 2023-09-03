@@ -24,6 +24,9 @@
             width:7pc;
             text-align: center;
         }
+        td{
+            background-color: #dfe2ec;
+        }
         th{
             padding-top: 12px;
             padding-bottom: 12px;
@@ -31,9 +34,18 @@
             background-color: #83d9b8;
             color: white;
         }
-a{
-    text-decoration: none;
-}
+        a{
+            text-decoration: none;
+            color:black;
+            font-size:  20px;
+        }
+        button{
+            background-color: #83d9b8;
+            padding:7px;
+            border: white 2px solid;
+            border-radius: 5%;
+
+        }
 
     </style>
 <body>
@@ -44,6 +56,7 @@ a{
 </script>
 @if(session('jsonData2'))
     <button><a href="/Queueservices">Refresh</a></button>
+    <button><a href="/admin">Menu</a></button>
 
     <table>
         <tr>

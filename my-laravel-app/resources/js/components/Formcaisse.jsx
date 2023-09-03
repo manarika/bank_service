@@ -12,8 +12,8 @@ function Formcaisse() {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const submit = async (e) => {
-        e.preventDefault();
         setIsSubmitting(true);
+        e.preventDefault();
 
         const formData = new FormData();
         formData.append('nom', nom);

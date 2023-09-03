@@ -24,6 +24,9 @@
             width:7pc;
             text-align: center;
         }
+        td{
+            background-color: #dfe2ec;
+        }
         th{
             padding-top: 12px;
             padding-bottom: 12px;
@@ -31,12 +34,32 @@
             background-color: #83d9b8;
             color: white;
         }
+        a{
+            text-decoration: none;
+            color:black;
+            font-size:  20px;
+        }
+        button{
+            background-color: #83d9b8;
+            padding:7px;
+            border: white 2px solid;
+            border-radius: 5%;
+
+        }
 
 
     </style>
 </head>
 <body>
+<script>setTimeout(function () {
+        window.location.href = '/QueueCaisse';
+    }, 15000);
+
+</script>
 @if(session('jsonData3'))
+    <button><a href="/QueueCaisse">Refresh</a></button>
+    <button><a href="/admin">Menu</a></button>
+
     <table>
         <tr>
             <th>Nom</th>
@@ -60,7 +83,7 @@
                 <td>{{ $item['Caisse']->nom }}</td>
                 <td>{{ $item['Caisse']->prenom }}</td>
                 <td>{{ $item['Caisse']->email }}</td>
-                <td>{{ $item['estimatedTime'] }}</td>
+                <td>{{ convertMinutesToHoursAndMinute($item['estimatedTime'] )}}</td>
                 <td><button><a href="/delete-clientcaisse/{{ $item['Caisse']->id}}">X</a></button></td>
 
             </tr>

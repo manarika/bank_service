@@ -18,8 +18,8 @@ class ClientController extends Controller
         $membersWithScores = Redis::zrange('reservation_queue', 0, -1, 'WITHSCORES');
         $count=0;
         foreach ($membersWithScores as $key=>$value){
-            $count+=1;
             $estimatedTime = $count * 10;
+            $count+=1;
             Redis::zadd('reservation_queue', $estimatedTime, $key);
 
         }
@@ -38,8 +38,8 @@ class ClientController extends Controller
         $membersWithScore = Redis::zrange('reservation_caisse_queue', 0, -1, 'WITHSCORES');
         $count=0;
         foreach ($membersWithScore as $key=>$value){
-            $count+=1;
             $estimatedTime = $count * 5;
+            $count+=1;
             Redis::zadd('reservation_caisse_queue', $estimatedTime, $key);
 
         }

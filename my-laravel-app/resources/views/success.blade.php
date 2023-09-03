@@ -57,6 +57,16 @@
     @if(session('jsonData'))
         @php
             $jsonData = session('jsonData');
+            $hours = floor($jsonData['estimatedTime']  / 60);
+            $remainingMinutes = $jsonData['estimatedTime']  % 60;
+
+    if ($hours == 0) {
+        $Time= "{$remainingMinutes} minutes";
+    } elseif ($remainingMinutes == 0) {
+       $Time= "{$hours} hours";
+    } else {
+       $Time= "{$hours} hours {$remainingMinutes} minutes";
+    }
         @endphp
         <div class="ticket">
 
@@ -65,7 +75,7 @@
         <ul class="details">Detaille de reservation :</ul>
         <li> Nom: {{ $jsonData['nom'] }}</li>
         <li>Prénom: {{ $jsonData['prenom'] }}</li>
-        <li>Temps Estimé: {{ $jsonData['estimatedTime'] }} minutes</li>
+        <li>Temps Estimé: {{ $Time }} </li>
             <br/>
         <span class="notife"> Vous receverez une notification par email 10 minutes  avant votre rendez-vous.  </span>
         <br/>

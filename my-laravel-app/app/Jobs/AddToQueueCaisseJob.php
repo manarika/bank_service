@@ -35,22 +35,32 @@ class AddToQueueCaisseJob implements ShouldQueue
     // AddToQueueJob.php
     public function handle()
     {
-
-        //locate queue position
-        $queuePosition = Caisse::where('status', 'queued')->count();
+        $queuePosition = 0;
         // Calculate estimated time based on the queue position and 5 minutes per person
-        $estimatedTime = $queuePosition * 10; // Estimated time in minutes
+
         // Add to the queue
+        $membersWithScore = Redis::zrange('reservation_caisse_queue', 0, -1, 'WITHSCORES');
+        foreach ($membersWithScore as $key=>$value){
+            $queuePosition+=1;
+        }
+        $estimatedTime = $queuePosition * 5; // Estimated time in minutes
        Redis::zadd('reservation_caisse_queue', $estimatedTime, $this->reservation->id);
         // Retrieve estimated time from Redis or queue
         $estimatedTime = Redis::zscore('reservation_caisse_queue',$this->reservation->id);
-        $estimatedTime = intval( $estimatedTime );
         //stocking data to return in the view 'passed to controller'
         $jsonData = [
             'nom' => $this->reservation->nom,
             'prenom' => $this->reservation->prenom,
             'estimatedTime' => $estimatedTime,
         ];
+        $membersWithScore = Redis::zrange('reservation_caisse_queue', 0, -1, 'WITHSCORES');
+
+        foreach ($jsonData as $jsonData1){
+            info('im in the job');
+        info($jsonData1);}
+        info('THIS TO CHECK AFTER CHANGES').
+        info($membersWithScore);
+
         return $jsonData;
 
 

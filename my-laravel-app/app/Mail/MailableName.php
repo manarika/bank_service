@@ -42,7 +42,7 @@ class MailableName extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.reservation_caisse',
+            view: 'emails.reservation',
         );
     }
 

@@ -3135,7 +3135,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Service_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Service.jsx */ "./resources/js/components/Service.jsx");
 /* harmony import */ var _components_Formservices_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Formservices.jsx */ "./resources/js/components/Formservices.jsx");
 /* harmony import */ var _components_Formcaisse_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Formcaisse.jsx */ "./resources/js/components/Formcaisse.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_Admin_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Admin.jsx */ "./resources/js/components/Admin.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
  // Use 'react-dom' for createRoot
@@ -3145,34 +3146,148 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 // Check if the "example" element exists on the page
 
 var exampleElement = document.getElementById('example');
 if (exampleElement) {
-  react_dom__WEBPACK_IMPORTED_MODULE_2__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)((react__WEBPACK_IMPORTED_MODULE_1___default().StrictMode), {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Example_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+  react_dom__WEBPACK_IMPORTED_MODULE_2__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)((react__WEBPACK_IMPORTED_MODULE_1___default().StrictMode), {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_Example_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {})
   }), exampleElement);
 }
 
 // Check if the "service" element exists on the page
 var serviceElement = document.getElementById('service');
 if (serviceElement) {
-  react_dom__WEBPACK_IMPORTED_MODULE_2__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)((react__WEBPACK_IMPORTED_MODULE_1___default().StrictMode), {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Service_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+  react_dom__WEBPACK_IMPORTED_MODULE_2__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)((react__WEBPACK_IMPORTED_MODULE_1___default().StrictMode), {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_Service_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {})
   }), serviceElement);
 }
 var FormserviceElement = document.getElementById('Formservice');
 if (FormserviceElement) {
-  react_dom__WEBPACK_IMPORTED_MODULE_2__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)((react__WEBPACK_IMPORTED_MODULE_1___default().StrictMode), {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Formservices_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {})
+  react_dom__WEBPACK_IMPORTED_MODULE_2__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)((react__WEBPACK_IMPORTED_MODULE_1___default().StrictMode), {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_Formservices_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {})
   }), FormserviceElement);
 }
 var CaisseElement = document.getElementById('Formcaisse');
 if (CaisseElement) {
-  react_dom__WEBPACK_IMPORTED_MODULE_2__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)((react__WEBPACK_IMPORTED_MODULE_1___default().StrictMode), {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Formcaisse_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+  react_dom__WEBPACK_IMPORTED_MODULE_2__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)((react__WEBPACK_IMPORTED_MODULE_1___default().StrictMode), {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_Formcaisse_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {})
   }), CaisseElement);
 }
+var AdminElement = document.getElementById('admin');
+if (AdminElement) {
+  react_dom__WEBPACK_IMPORTED_MODULE_2__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)((react__WEBPACK_IMPORTED_MODULE_1___default().StrictMode), {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_Admin_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], {})
+  }), AdminElement);
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Admin.jsx":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Admin.jsx ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/app.module.css */ "./resources/js/components/app.module.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+ // Update the path as needed
+
+
+
+function Admin() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].flexcontainer,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].flexchild,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+        href: "/Queueservices",
+        className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].link,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+          children: "Queue du Service"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("svg", {
+            fill: "#ebebeb",
+            version: "1.1",
+            id: "Layer_1",
+            xmlns: "http://www.w3.org/2000/svg",
+            width: "153px",
+            height: "153px",
+            viewBox: "0 0 256 240",
+            "enable-background": "new 0 0 256 240",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("g", {
+              id: "SVGRepo_bgCarrier",
+              "stroke-width": "0"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("g", {
+              id: "SVGRepo_tracerCarrier",
+              "stroke-linecap": "round",
+              "stroke-linejoin": "round"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("g", {
+              id: "SVGRepo_iconCarrier",
+              children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+                d: "M84.635,20.256c18.383,0,33.286,14.903,33.286,33.286s-14.903,33.286-33.286,33.286S51.349,71.925,51.349,53.542 S66.251,20.256,84.635,20.256z M31.002,145.011c0-2.499,1.606-4.194,4.194-4.194s4.194,1.606,4.194,4.194v92.986h91.469v-92.986 c0-2.499,1.606-4.194,4.194-4.194c2.499,0,4.194,1.606,4.194,4.194v92.986h29.092V136.623c0-22.934-18.74-41.585-41.585-41.585 h-8.388l-24.451,38.015l-2.945-28.467l4.016-9.638H76.96l4.016,9.638l-3.123,28.645L53.401,95.038h-9.816 C20.651,95.038,2,113.778,2,136.623v101.375h29.092v-92.986H31.002z M197.036,24.057L189.972,2h40.376l-8.659,22.057H197.036z M166.093,70.494c0-17.044,9.433-31.763,23.606-39.1h40.422C244.293,38.73,254,53.45,254,70.494c0,24.153-19.687,43.84-43.84,43.84 C185.734,114.333,166.093,94.647,166.093,70.494z M214.125,81.021c0,2.598-2.37,3.919-5.788,3.919c-3.965,0-7.61-1.322-10.254-2.643 l-1.823,7.064c2.324,1.322,6.289,2.37,10.481,2.643v5.788h6.015v-6.289c7.109-1.048,11.028-5.788,11.028-11.302 c0-5.514-2.917-8.886-10.254-11.53c-5.241-1.823-7.337-3.144-7.337-5.241c0-1.595,1.322-3.418,5.241-3.418 c4.466,0,7.337,1.322,8.932,2.096l1.823-6.836c-2.096-1.048-4.739-1.823-8.932-2.096v-5.514h-6.015v5.742 c-6.562,1.322-10.481,5.514-10.481,11.028c0,6.061,4.466,9.205,11.028,11.302C212.257,77.329,214.353,78.651,214.125,81.021z"
+              }), " "]
+            })]
+          })
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].flexchild,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+        href: "/QueueCaisse",
+        className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].link,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+          children: "Queue de la Caisse"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("svg", {
+            fill: "#ebebeb",
+            version: "1.1",
+            id: "Capa_1",
+            xmlns: "http://www.w3.org/2000/svg",
+            width: "152px",
+            height: "152px",
+            viewBox: "0 0 59.333 59.333",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("g", {
+              id: "SVGRepo_bgCarrier",
+              "stroke-width": "0"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("g", {
+              id: "SVGRepo_tracerCarrier",
+              "stroke-linecap": "round",
+              "stroke-linejoin": "round"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("g", {
+              id: "SVGRepo_iconCarrier",
+              children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("g", {
+                children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("g", {
+                  children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+                    d: "M40.52,30.413h8.426c-0.002-0.042-0.013-0.081-0.013-0.122c0-1.674,1.357-3.034,3.033-3.034V16.929 c-1.676,0-3.033-1.358-3.033-3.033h-7.969c1.955,2.11,3.158,4.926,3.158,8.028C44.122,25.257,42.737,28.265,40.52,30.413z M47.604,19.854c1.065,0,1.93,0.864,1.93,1.931c0,1.067-0.863,1.93-1.93,1.93c-1.067,0-1.932-0.863-1.932-1.93 C45.673,20.718,46.538,19.854,47.604,19.854z"
+                  }), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+                    d: "M12.44,16.989v10.33c1.677,0,3.034,1.359,3.034,3.034c0,0.021-0.006,0.039-0.006,0.061h8.608 c-2.223-2.148-3.605-5.156-3.605-8.489c0-3.103,1.203-5.918,3.16-8.028h-8.163c0,0.022,0.006,0.04,0.006,0.06 C15.476,15.631,14.118,16.989,12.44,16.989z M17.693,22.236c0,0.994-0.806,1.802-1.8,1.802c-0.993,0-1.8-0.808-1.8-1.802 c0-0.992,0.807-1.798,1.8-1.798C16.889,20.439,17.693,21.244,17.693,22.236z"
+                  }), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+                    d: "M32.298,31.6c5.344,0,9.677-4.332,9.677-9.676c0-5.343-4.333-9.676-9.677-9.676c-5.344,0-9.675,4.333-9.675,9.676 C22.623,27.268,26.954,31.6,32.298,31.6z M34.099,22.924c-0.146-0.139-0.36-0.292-0.647-0.464 c-0.283-0.172-0.646-0.359-1.092-0.563c-0.916-0.41-1.515-0.786-1.804-1.133c-0.458-0.513-0.686-1.127-0.686-1.845 c0-0.339,0.056-0.655,0.161-0.949c0.109-0.29,0.266-0.558,0.471-0.794c0.207-0.237,0.46-0.444,0.763-0.62 c0.301-0.175,0.644-0.31,1.024-0.409v-1.386h1.238v1.386c0.557,0.09,1.011,0.273,1.365,0.551c0.354,0.28,0.688,0.705,1.012,1.28 l-1.379,0.772c-0.416-0.756-0.958-1.133-1.627-1.133c-0.416,0-0.76,0.121-1.033,0.368c-0.274,0.246-0.41,0.552-0.41,0.921 c0,0.334,0.109,0.611,0.33,0.832c0.218,0.217,0.657,0.475,1.316,0.771c0.569,0.262,1.043,0.504,1.416,0.734 c0.371,0.228,0.651,0.45,0.842,0.661c0.533,0.575,0.799,1.271,0.799,2.085c0,0.803-0.241,1.509-0.721,2.123 c-0.478,0.608-1.115,1.021-1.91,1.229v1.466h-1.238v-1.422c-0.924-0.15-1.631-0.47-2.115-0.955 c-0.485-0.486-0.843-1.233-1.073-2.249l1.556-0.325c0.211,0.717,0.471,1.228,0.777,1.533c0.319,0.295,0.748,0.439,1.279,0.439 c0.521,0,0.953-0.167,1.302-0.502c0.346-0.329,0.517-0.758,0.517-1.279C34.529,23.582,34.387,23.207,34.099,22.924z"
+                  }), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+                    d: "M58.331,1.753h-43c-0.553,0-1,0.447-1,1V10H9.916c-0.553,0-1,0.447-1,1v22.473c0,0.554,0.447,1,1,1h45.083 c0.554,0,1-0.446,1-1V11c0-0.553-0.446-1-1-1H16.332V3.753h41v24.802c0,0.553,0.447,1,1,1c0.554,0,1-0.447,1-1V2.753 C59.331,2.2,58.885,1.753,58.331,1.753z M53.999,32.473H10.916V12h43.083V32.473z"
+                  }), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+                    d: "M58.331,39.836c-0.001,0-0.001,0-0.002,0l-4.666,0.01c-0.367,0.001-0.705,0.203-0.879,0.526l-4.051,7.542H35.057l-2.167-2 h5.441c0.224,0,0.439-0.074,0.615-0.211l2.188-1.705c0.229-0.181,0.369-0.451,0.384-0.743c0.014-0.292-0.103-0.575-0.314-0.775 l-2.52-2.363c-0.187-0.174-0.431-0.271-0.685-0.271l-10.144-0.01c-2.811-1.104-5.598-1.664-8.287-1.664 c-4.747,0-7.548,1.746-7.618,1.792L0.511,46.375c-0.251,0.141-0.43,0.383-0.489,0.665c-0.059,0.281,0.006,0.576,0.179,0.807 l7,9.333c0.195,0.261,0.495,0.4,0.801,0.4c0.176,0,0.354-0.046,0.514-0.144l4.123-2.476l5.533,0.948l18.572,1.666 c0.075,0.008,0.153,0.006,0.229-0.006l16.5-2.334c0.328-0.047,0.611-0.252,0.759-0.549l5-10.205 c0.065-0.138,0.102-0.287,0.102-0.439v-3.207c0-0.266-0.104-0.521-0.294-0.708C58.851,39.942,58.597,39.836,58.331,39.836z M57.331,43.812l-4.665,9.521l-15.859,2.241l-18.378-1.646l-5.818-1c-0.056-0.01-0.112-0.015-0.169-0.015 c-0.181,0-0.358,0.049-0.515,0.143l-3.668,2.202L2.485,47.56l10.489-5.878c0.023-0.016,2.469-1.511,6.596-1.511 c2.491,0,5.09,0.536,7.724,1.592c0.118,0.049,0.244,0.072,0.371,0.072l9.938,0.01l1.38,1.293l-0.995,0.775h-7.656 c-0.412,0-0.78,0.252-0.932,0.636c-0.149,0.384-0.049,0.82,0.253,1.099l4.334,4c0.186,0.172,0.428,0.267,0.679,0.267h14.666 c0.368,0,0.707-0.202,0.881-0.526l4.053-7.543l3.066-0.007L57.331,43.812L57.331,43.812z"
+                  }), " "]
+                }), " "]
+              }), " "]
+            })]
+          })
+        })]
+      })
+    })]
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Admin);
 
 /***/ }),
 
@@ -3239,6 +3354,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
 /* harmony import */ var _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/app.module.css */ "./resources/js/components/app.module.css");
 /* harmony import */ var _Service_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Service.jsx */ "./resources/js/components/Service.jsx");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw new Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw new Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
@@ -3250,6 +3366,7 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -3273,6 +3390,10 @@ function Formcaisse() {
     _useState8 = _slicedToArray(_useState7, 2),
     email = _useState8[0],
     setEmail = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState10 = _slicedToArray(_useState9, 2),
+    isSubmitting = _useState10[0],
+    setIsSubmitting = _useState10[1];
   var submit = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(e) {
       var formData, csrfToken, response;
@@ -3280,34 +3401,40 @@ function Formcaisse() {
         while (1) switch (_context.prev = _context.next) {
           case 0:
             e.preventDefault();
+            setIsSubmitting(true);
             formData = new FormData();
             formData.append('nom', nom);
             formData.append('prenom', prenom);
             formData.append('tel', tel);
             formData.append('email', email);
-            _context.prev = 6;
+            _context.prev = 7;
             csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
-            _context.next = 10;
+            _context.next = 11;
             return axios__WEBPACK_IMPORTED_MODULE_4__["default"].post('/reserve-Caisse', formData, {
               headers: {
                 'X-CSRF-TOKEN': csrfToken
               }
             });
-          case 10:
+          case 11:
             response = _context.sent;
             console.log('Form submitted successfully', response.data);
-            window.location.href = 'http://localhost:8000/simulate';
-            _context.next = 18;
+            window.location.href = 'http://localhost:8000/success';
+            _context.next = 19;
             break;
-          case 15:
-            _context.prev = 15;
-            _context.t0 = _context["catch"](6);
+          case 16:
+            _context.prev = 16;
+            _context.t0 = _context["catch"](7);
             console.error('Form submission error:', _context.t0);
-          case 18:
+          case 19:
+            _context.prev = 19;
+            // Re-enable the submit button after submission is complete
+            setIsSubmitting(false);
+            return _context.finish(19);
+          case 22:
           case "end":
             return _context.stop();
         }
-      }, _callee, null, [[6, 15]]);
+      }, _callee, null, [[7, 16, 19, 22]]);
     }));
     return function submit(_x) {
       return _ref.apply(this, arguments);
@@ -3317,7 +3444,7 @@ function Formcaisse() {
     className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].container,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].text,
-      children: "Contact us Form"
+      children: "Remplissez le formulaire :"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("form", {
       onSubmit: submit,
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
@@ -3385,9 +3512,17 @@ function Formcaisse() {
             children: "Telphone"
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-        type: "submit",
-        children: "SEND"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].envoyer,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].button,
+          type: "submit",
+          disabled: isSubmitting,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+            className: "text",
+            children: "Reservez"
+          })
+        })
       })]
     })]
   });
@@ -3409,10 +3544,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
 /* harmony import */ var _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/app.module.css */ "./resources/js/components/app.module.css");
-/* harmony import */ var _Service_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Service.jsx */ "./resources/js/components/Service.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw new Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw new Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -3446,121 +3581,142 @@ function Formservices() {
     _useState8 = _slicedToArray(_useState7, 2),
     email = _useState8[0],
     setEmail = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState10 = _slicedToArray(_useState9, 2),
+    isSubmitting = _useState10[0],
+    setIsSubmitting = _useState10[1];
   var submit = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(e) {
       var formData, csrfToken, response;
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
+            setIsSubmitting(true);
             e.preventDefault();
+
+            // Disable the submit button to prevent multiple submissions
             formData = new FormData();
             formData.append('nom', nom);
             formData.append('prenom', prenom);
             formData.append('tel', tel);
             formData.append('email', email);
-            _context.prev = 6;
+            _context.prev = 7;
             csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
-            _context.next = 10;
-            return axios__WEBPACK_IMPORTED_MODULE_4__["default"].post('/reserve-service', formData, {
+            _context.next = 11;
+            return axios__WEBPACK_IMPORTED_MODULE_3__["default"].post('/reserve-service', formData, {
               headers: {
                 'X-CSRF-TOKEN': csrfToken
               }
             });
-          case 10:
+          case 11:
             response = _context.sent;
             console.log('Form submitted successfully', response.data);
-            window.location.href = 'http://localhost:8000/simulate';
-            _context.next = 18;
+            window.location.href = 'http://localhost:8000/success';
+            _context.next = 19;
             break;
-          case 15:
-            _context.prev = 15;
-            _context.t0 = _context["catch"](6);
+          case 16:
+            _context.prev = 16;
+            _context.t0 = _context["catch"](7);
             console.error('Form submission error:', _context.t0);
-          case 18:
+          case 19:
+            _context.prev = 19;
+            // Re-enable the submit button after submission is complete
+            setIsSubmitting(false);
+            return _context.finish(19);
+          case 22:
           case "end":
             return _context.stop();
         }
-      }, _callee, null, [[6, 15]]);
+      }, _callee, null, [[7, 16, 19, 22]]);
     }));
     return function submit(_x) {
       return _ref.apply(this, arguments);
     };
   }();
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].container,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
       className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].text,
       children: "Contact us Form"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("form", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
       onSubmit: submit,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].formrow,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
           className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].inputdata,
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
             value: nom,
             onChange: function onChange(e) {
               return setNom(e.target.value);
             },
             type: "text",
             required: true
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
             className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].underline
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
             htmlFor: "",
             children: "Nom"
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
           className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].inputdata,
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
             value: prenom,
             onChange: function onChange(e) {
               return setPrenom(e.target.value);
             },
             type: "text",
             required: true
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
             className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].underline
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
             htmlFor: "",
             children: "Prenom"
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].formrow,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
           className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].inputdata,
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
             value: email,
             onChange: function onChange(e) {
               return setEmail(e.target.value);
             },
             type: "email"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
             className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].underline
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
             htmlFor: "",
             children: " Adresse Email"
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
           className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].inputdata,
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
             value: tel,
             onChange: function onChange(e) {
               return setTel(e.target.value);
             },
             type: "tel",
             required: true
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
             className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].underline
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
             htmlFor: "",
             children: "Telphone"
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-        type: "submit",
-        children: "SEND"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].envoyer,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          className: _components_app_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].button,
+          type: "submit",
+          disabled: isSubmitting,
+          onClick: stop,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+            className: "text",
+            children: "Reservez"
+          })
+        })
       })]
     })]
   });
@@ -10205,7 +10361,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap);"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_vecteezy_banking_building_business_finance_management_low_poly_2_jpg__WEBPACK_IMPORTED_MODULE_2__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/*.button{\n    width: 200px;\n    border:none;\n    height:100px ;\n    background-color: #4a5568;\n    border-top: 1px solid lightgray;\n    border-bottom: 1px solid lightgray;\n    border-radius: 10%;\n    margin-top: 20px;\n    color:whitesmoke;\n}*/\n\n.L-LelKfqGkBm7tINZDyTxA\\=\\={\n    font-size: 60px;\n   margin-top: 50px;\n    color: whitesmoke;\n}\nbody{\n    width: 100%;\n    margin: 520px 0 -6px 0;\n    font-family: \"Kristen ITC\", serif;\n    font-size: 25px;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: auto;\n}\n.KEDj330JHRzcgUaxCkyKyw\\=\\={\n    position: absolute;\n    top:55%;\n    margin-left: 70px;\n    margin-top:-200px ;\n    padding-top: 0;\n}\n\n\n\n\n.ATmMqa4TxSASDy364j1n4w\\=\\= {\n    align-items: center;\n    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);\n    border: 0;\n    border-radius: 8px;\n    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;\n    box-sizing: border-box;\n    color: #FFFFFF;\n    display: flex;\n    font-family: Phantomsans, sans-serif;\n    font-size: 20px;\n    justify-content: center;\n    line-height: 1em;\n    max-width: 100%;\n    min-width: 140px;\n    padding: 3px;\n    text-decoration: none;\n    -moz-user-select: none;\n         user-select: none;\n    -webkit-user-select: none;\n    touch-action: manipulation;\n    white-space: nowrap;\n    cursor: pointer;\n                                                                             }\n\n.ATmMqa4TxSASDy364j1n4w\\=\\=:active,\n.ATmMqa4TxSASDy364j1n4w\\=\\=:hover {\n    outline: 0;\n}\n\n.ATmMqa4TxSASDy364j1n4w\\=\\= span {\n    background-color: rgb(5, 6, 45);\n    padding: 16px 24px;\n    border-radius: 6px;\n    width: 100%;\n    height: 100%;\n    transition: 300ms;\n}\n\n.ATmMqa4TxSASDy364j1n4w\\=\\=:hover span {\n    background: none;\n}\n\n@media (min-width: 768px) {\n    .ATmMqa4TxSASDy364j1n4w\\=\\= {\n        font-size: 24px;\n        min-width: 196px;\n    }\n}\n\n.aUKvXxEyQOwOyKd4GgIYHw\\=\\= {\n    display: flex;\n    margin: 10%;\n\n}\n\n._2V5HGGrTs0x0DLF9zBwvDw\\=\\= {\n    flex: 1;\n    border: 5px solid ;\n    -o-border-image:   linear-gradient(to right,violet,yellow) 5;\n       border-image:   linear-gradient(to right,violet,yellow) 5;\n\n    padding-top: 10%;\n    padding-bottom: 10%;\n\n    padding-left: 17%;\n}\n._2V5HGGrTs0x0DLF9zBwvDw\\=\\=:hover{\n    background: rgba(45, 28, 52, 0.5);\n}\n\n._2V5HGGrTs0x0DLF9zBwvDw\\=\\=:first-child {\n    margin-right: 60px;\n}\n\n.y-6Wu0I1JrV-vFmUGK4P1Q\\=\\={\n    text-decoration: none;\n    color: white;\n}\n/******************************************************/\n\n.uLfPhBaAfYcis5z\\+3zlSuQ\\=\\={\n    max-width: 800px;\n    background: #fff;\n    width: 800px;\n    padding: 25px 40px 10px 40px;\n    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);\n}\n.uLfPhBaAfYcis5z\\+3zlSuQ\\=\\= .GmC-TH9kEN2rfvJ7mfng7Q\\=\\={\n    text-align: center;\n    font-size: 41px;\n    font-weight: 600;\n    font-family: 'Poppins', sans-serif;\n    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);\n    -webkit-background-clip: text;\n    -webkit-text-fill-color: transparent;\n}\n.uLfPhBaAfYcis5z\\+3zlSuQ\\=\\= form{\n    padding: 30px 0 0 0;\n}\n.uLfPhBaAfYcis5z\\+3zlSuQ\\=\\= form .SHkOlZv90z1dXfsyF5Irtw\\=\\={\n    display: flex;\n    margin: 32px 0;\n}\nform .SHkOlZv90z1dXfsyF5Irtw\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\={\n    width: 100%;\n    height: 40px;\n    margin: 0 20px;\n    position: relative;\n}\nform .SHkOlZv90z1dXfsyF5Irtw\\=\\= .R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\={\n    height: 70px;\n}\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= input,\n.R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= textarea{\n    display: block;\n    width: 100%;\n    height: 100%;\n    border: none;\n    font-size: 17px;\n    border-bottom: 2px solid rgba(0,0,0, 0.12);\n}\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= input:focus ~ label, .R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= textarea:focus ~ label,\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= input:valid ~ label, .R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= textarea:valid ~ label{\n    transform: translateY(-20px);\n    font-size: 14px;\n    color: #3498db;\n}\n.R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= textarea{\n    resize: none;\n    padding-top: 10px;\n}\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= label{\n    position: absolute;\n    pointer-events: none;\n    bottom: 10px;\n    font-size: 16px;\n    transition: all 0.3s ease;\n}\n.R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= label{\n    width: 100%;\n    bottom: 40px;\n    background: #fff;\n}\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= ._1OhlbaY4DVUjmGLjAAStNg\\=\\={\n    position: absolute;\n    bottom: 0;\n    height: 2px;\n    width: 100%;\n}\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= ._1OhlbaY4DVUjmGLjAAStNg\\=\\=:before{\n    position: absolute;\n    content: \"\";\n    height: 2px;\n    width: 100%;\n    background: #3498db;\n    transform: scaleX(0);\n    transform-origin: center;\n    transition: transform 0.3s ease;\n}\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= input:focus ~ ._1OhlbaY4DVUjmGLjAAStNg\\=\\=:before,\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= input:valid ~ ._1OhlbaY4DVUjmGLjAAStNg\\=\\=:before,\n.R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= textarea:focus ~ ._1OhlbaY4DVUjmGLjAAStNg\\=\\=:before,\n.R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= textarea:valid ~ ._1OhlbaY4DVUjmGLjAAStNg\\=\\=:before{\n    transform: scale(1);\n}\n.VTFF6L2\\+iIMRa8YFTOekzA\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\={\n    overflow: hidden;\n    height: 45px!important;\n    width: 25%!important;\n}\n.VTFF6L2\\+iIMRa8YFTOekzA\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= .RC\\+J4NSGsgAi0S05-o5IXg\\=\\={\n    height: 100%;\n    width: 300%;\n    position: absolute;\n    left: -100%;\n    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);\n    transition: all 0.4s;\n}\n.VTFF6L2\\+iIMRa8YFTOekzA\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\=:hover .RC\\+J4NSGsgAi0S05-o5IXg\\=\\={\n    left: 0;\n}\n.VTFF6L2\\+iIMRa8YFTOekzA\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= input{\n    background: none;\n    border: none;\n    color: #fff;\n    font-size: 17px;\n    font-weight: 500;\n    text-transform: uppercase;\n    letter-spacing: 1px;\n    cursor: pointer;\n    position: relative;\n    z-index: 2;\n}\n@media (max-width: 700px) {\n    .uLfPhBaAfYcis5z\\+3zlSuQ\\=\\= .GmC-TH9kEN2rfvJ7mfng7Q\\=\\={\n        font-size: 30px;\n    }\n    .uLfPhBaAfYcis5z\\+3zlSuQ\\=\\= form{\n        padding: 10px 0 0 0;\n    }\n    .uLfPhBaAfYcis5z\\+3zlSuQ\\=\\= form .SHkOlZv90z1dXfsyF5Irtw\\=\\={\n        display: block;\n    }\n    form .SHkOlZv90z1dXfsyF5Irtw\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\={\n        margin: 35px 0!important;\n    }\n    .VTFF6L2\\+iIMRa8YFTOekzA\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\={\n        width: 40%!important;\n    }\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/*.button{\n    width: 200px;\n    border:none;\n    height:100px ;\n    background-color: #4a5568;\n    border-top: 1px solid lightgray;\n    border-bottom: 1px solid lightgray;\n    border-radius: 10%;\n    margin-top: 20px;\n    color:whitesmoke;\n}*/\n\n.L-LelKfqGkBm7tINZDyTxA\\=\\={\n    font-size: 60px;\n   margin-top: 50px;\n    color: whitesmoke;\n}\nbody{\n    width: 100%;\n    margin: 520px 0 -6px 0;\n    font-family: \"Kristen ITC\", serif;\n    font-size: 25px;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: auto;\n}\n.KEDj330JHRzcgUaxCkyKyw\\=\\={\n    position: absolute;\n    top:55%;\n    margin-left: 70px;\n    margin-top:-200px ;\n    padding-top: 0;\n}\n\n\n\n\n.ATmMqa4TxSASDy364j1n4w\\=\\= {\n    align-items: center;\n    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);\n    border: 0;\n    border-radius: 8px;\n    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;\n    box-sizing: border-box;\n    color: #FFFFFF;\n    display: flex;\n    font-family: Phantomsans, sans-serif;\n    font-size: 20px;\n    justify-content: center;\n    line-height: 1em;\n    max-width: 100%;\n    min-width: 140px;\n    padding: 3px;\n    text-decoration: none;\n    -moz-user-select: none;\n         user-select: none;\n    -webkit-user-select: none;\n    touch-action: manipulation;\n    white-space: nowrap;\n    cursor: pointer;\n                                                                             }\n\n.ATmMqa4TxSASDy364j1n4w\\=\\=:active,\n.ATmMqa4TxSASDy364j1n4w\\=\\=:hover {\n    outline: 0;\n}\n\n.ATmMqa4TxSASDy364j1n4w\\=\\= span {\n    background-color: rgb(5, 6, 45);\n    padding: 16px 24px;\n    border-radius: 6px;\n    width: 100%;\n    height: 100%;\n    transition: 300ms;\n}\n\n.ATmMqa4TxSASDy364j1n4w\\=\\=:hover span {\n    background: none;\n}\n\n@media (min-width: 768px) {\n    .ATmMqa4TxSASDy364j1n4w\\=\\= {\n        font-size: 24px;\n        min-width: 196px;\n    }\n}\n\n.aUKvXxEyQOwOyKd4GgIYHw\\=\\= {\n    display: flex;\n    margin: 10%;\n\n}\n\n._2V5HGGrTs0x0DLF9zBwvDw\\=\\= {\n    flex: 1;\n    border: 5px solid ;\n    -o-border-image:   linear-gradient(to right,violet,yellow) 5;\n       border-image:   linear-gradient(to right,violet,yellow) 5;\n\n    padding-top: 10%;\n    padding-bottom: 10%;\n\n    padding-left: 17%;\n}\n\n\n._2V5HGGrTs0x0DLF9zBwvDw\\=\\=:hover{\n    background: rgba(45, 28, 52, 0.5);\n}\n\n._2V5HGGrTs0x0DLF9zBwvDw\\=\\=:first-child {\n    margin-right: 60px;\n}\n\n.y-6Wu0I1JrV-vFmUGK4P1Q\\=\\={\n    text-decoration: none;\n    color: white;\n}\n/******************************************************/\n\n.uLfPhBaAfYcis5z\\+3zlSuQ\\=\\={\n    max-width: 800px;\n    background: #fff;\n    width: 800px;\n    padding: 25px 40px 10px 40px;\n    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);\n}\n.uLfPhBaAfYcis5z\\+3zlSuQ\\=\\= .GmC-TH9kEN2rfvJ7mfng7Q\\=\\={\n    text-align: center;\n    font-size: 41px;\n    font-weight: 600;\n    font-family: 'Poppins', sans-serif;\n    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);\n    -webkit-background-clip: text;\n    -webkit-text-fill-color: transparent;\n}\n.uLfPhBaAfYcis5z\\+3zlSuQ\\=\\= form{\n    padding: 30px 0 0 0;\n}\n.uLfPhBaAfYcis5z\\+3zlSuQ\\=\\= form .SHkOlZv90z1dXfsyF5Irtw\\=\\={\n    display: flex;\n    margin: 32px 0;\n}\nform .SHkOlZv90z1dXfsyF5Irtw\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\={\n    width: 100%;\n    height: 40px;\n    margin: 0 20px;\n    position: relative;\n}\nform .SHkOlZv90z1dXfsyF5Irtw\\=\\= .R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\={\n    height: 70px;\n}\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= input,\n.R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= textarea{\n    display: block;\n    width: 100%;\n    height: 100%;\n    border: none;\n    font-size: 17px;\n    border-bottom: 2px solid rgba(0,0,0, 0.12);\n}\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= input:focus ~ label, .R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= textarea:focus ~ label,\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= input:valid ~ label, .R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= textarea:valid ~ label{\n    transform: translateY(-20px);\n    font-size: 14px;\n    color: #3498db;\n}\n.R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= textarea{\n    resize: none;\n    padding-top: 10px;\n}\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= label{\n    position: absolute;\n    pointer-events: none;\n    bottom: 10px;\n    font-size: 16px;\n    transition: all 0.3s ease;\n}\n.R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= label{\n    width: 100%;\n    bottom: 40px;\n    background: #fff;\n}\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= ._1OhlbaY4DVUjmGLjAAStNg\\=\\={\n    position: absolute;\n    bottom: 0;\n    height: 2px;\n    width: 100%;\n}\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= ._1OhlbaY4DVUjmGLjAAStNg\\=\\=:before{\n    position: absolute;\n    content: \"\";\n    height: 2px;\n    width: 100%;\n    background: #3498db;\n    transform: scaleX(0);\n    transform-origin: center;\n    transition: transform 0.3s ease;\n}\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= input:focus ~ ._1OhlbaY4DVUjmGLjAAStNg\\=\\=:before,\n.RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= input:valid ~ ._1OhlbaY4DVUjmGLjAAStNg\\=\\=:before,\n.R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= textarea:focus ~ ._1OhlbaY4DVUjmGLjAAStNg\\=\\=:before,\n.R\\+plz2bSlj1Y3tlhmvKJgQ\\=\\= textarea:valid ~ ._1OhlbaY4DVUjmGLjAAStNg\\=\\=:before{\n    transform: scale(1);\n}\n.VTFF6L2\\+iIMRa8YFTOekzA\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\={\n    overflow: hidden;\n    height: 45px!important;\n    width: 25%!important;\n}\n.VTFF6L2\\+iIMRa8YFTOekzA\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= .RC\\+J4NSGsgAi0S05-o5IXg\\=\\={\n    height: 100%;\n    width: 300%;\n    position: absolute;\n    left: -100%;\n    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);\n    transition: all 0.4s;\n}\n.VTFF6L2\\+iIMRa8YFTOekzA\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\=:hover .RC\\+J4NSGsgAi0S05-o5IXg\\=\\={\n    left: 0;\n}\n.VTFF6L2\\+iIMRa8YFTOekzA\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\= input{\n    background: none;\n    border: none;\n    color: #fff;\n    font-size: 17px;\n    font-weight: 500;\n    text-transform: uppercase;\n    letter-spacing: 1px;\n    cursor: pointer;\n    position: relative;\n    z-index: 2;\n}\n@media (max-width: 700px) {\n    .uLfPhBaAfYcis5z\\+3zlSuQ\\=\\= .GmC-TH9kEN2rfvJ7mfng7Q\\=\\={\n        font-size: 30px;\n    }\n    .uLfPhBaAfYcis5z\\+3zlSuQ\\=\\= form{\n        padding: 10px 0 0 0;\n    }\n    .uLfPhBaAfYcis5z\\+3zlSuQ\\=\\= form .SHkOlZv90z1dXfsyF5Irtw\\=\\={\n        display: block;\n    }\n    form .SHkOlZv90z1dXfsyF5Irtw\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\={\n        margin: 35px 0!important;\n    }\n    .VTFF6L2\\+iIMRa8YFTOekzA\\=\\= .RQGPDT\\+kWSrt2t1PmCj1Iw\\=\\={\n        width: 40%!important;\n    }\n}\n\n._2cFKj9gqa6Amy7FKu05FNw\\=\\={\n    margin-left: 33%;\n}\n\n.\\+khCyLyX0ofqahVXpzczlQ\\=\\={\n    align-items: center;\n    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);\n    border: 0;\n    border-radius: 8px;\n    box-shadow: rgba(126, 55, 218, 0.2) 0 15px 30px -5px;\n    box-sizing: border-box;\n    color: #FFFFFF;\n    display: flex;\n    font-family: Phantomsans, sans-serif;\n    font-size: 20px;\n    justify-content: center;\n    line-height: 1em;\n    max-width: 100%;\n    min-width: 140px;\n    padding: 2px;\n    text-decoration: none;\n    -moz-user-select: none;\n         user-select: none;\n    -webkit-user-select: none;\n    touch-action: manipulation;\n    white-space: nowrap;\n    cursor: pointer;\n}\n\n.\\+khCyLyX0ofqahVXpzczlQ\\=\\=:active,\n.\\+khCyLyX0ofqahVXpzczlQ\\=\\=:hover {\n    outline: 0;\n}\n\n.ATmMqa4TxSASDy364j1n4w\\=\\= span {\n    background-color: rgb(91, 91, 225);\n    padding: 9px 22px;\n    border-radius: 6px;\n    width: 100%;\n    height: 100%;\n    transition: 300ms;\n}\n\n.ATmMqa4TxSASDy364j1n4w\\=\\=:hover span {\n    background: none;\n}\n\n@media (min-width: 768px) {\n    .ATmMqa4TxSASDy364j1n4w\\=\\= {\n        font-size: 24px;\n        min-width: 196px;\n    }\n}\n", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"titre": "L-LelKfqGkBm7tINZDyTxA==",
@@ -10221,7 +10377,9 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"textarea": "R+plz2bSlj1Y3tlhmvKJgQ==",
 	"underline": "_1OhlbaY4DVUjmGLjAAStNg==",
 	"submit-btn": "VTFF6L2+iIMRa8YFTOekzA==",
-	"inner": "RC+J4NSGsgAi0S05-o5IXg=="
+	"inner": "RC+J4NSGsgAi0S05-o5IXg==",
+	"envoyer": "_2cFKj9gqa6Amy7FKu05FNw==",
+	"button2": "+khCyLyX0ofqahVXpzczlQ=="
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

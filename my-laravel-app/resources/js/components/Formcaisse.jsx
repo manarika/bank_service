@@ -2,15 +2,18 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import styles from '../components/app.module.css';
 import Service from "./Service.jsx";
+import {Button} from "react-bootstrap";
 
 function Formcaisse() {
     const [nom, setNom] = useState('');
     const [prenom, setPrenom] = useState('');
     const [tel, setTel] = useState('');
     const [email, setEmail] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const submit = async (e) => {
         e.preventDefault();
+        setIsSubmitting(true);
 
         const formData = new FormData();
         formData.append('nom', nom);
@@ -32,12 +35,15 @@ function Formcaisse() {
         } catch (error) {
             console.error('Form submission error:', error);
         }
-    };
+   finally {
+        // Re-enable the submit button after submission is complete
+        setIsSubmitting(false);
+    } };
 
     return (
         <div className={styles.container}>
             <div className={styles.text}>
-                Contact us Form
+                Remplissez le formulaire :
             </div>
             <form onSubmit={submit}>
                 <div className={styles.formrow}>
@@ -86,9 +92,10 @@ function Formcaisse() {
                         <label htmlFor="">Telphone</label>
                     </div>
                 </div>
-                <button type="submit">
-                    SEND
-                </button>
+                <div className={styles.envoyer}>
+
+                <Button className={styles.button} type="submit"  disabled={isSubmitting}><span className="text">Reservez</span></Button>
+                </div>
             </form>
         </div>
 

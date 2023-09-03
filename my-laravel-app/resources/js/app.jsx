@@ -6,6 +6,7 @@ import Service from "./components/Service.jsx"; // Adjust the path as needed
 import ReactDOM from 'react-dom';
 import Formservices from "./components/Formservices.jsx";
 import Formcaisse from "./components/Formcaisse.jsx";
+import Admin from "./components/Admin.jsx";
 
 
 // Check if the "example" element exists on the page
@@ -49,3 +50,15 @@ if (CaisseElement) {
         CaisseElement
     );
 }
+
+const AdminElement = document.getElementById('admin');
+if (AdminElement) {
+    ReactDOM.render(
+        <React.StrictMode>
+            <Admin/>
+        </React.StrictMode>,
+        AdminElement
+    );
+}
+
+

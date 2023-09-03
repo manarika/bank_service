@@ -14,8 +14,8 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
 
-        $schedule->job(new SendReservationEmail)->everyMinute();
-        $schedule->command('app:send-email')->everyMinute();
+        //$schedule->job(new SendReservationEmail)->everyMinute();
+        //$schedule->command('app:send-email')->everyMinute();
         // $schedule->command('inspire')->hourly();
     }
 
